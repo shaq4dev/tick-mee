@@ -1,0 +1,126 @@
+
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 30px;
+    border-bottom: .5px solid rgba(143, 206, 54, .3);
+    width: 90%; 
+    margin: auto;
+    padding-bottom: 20px;
+}
+
+.delSpan {
+    background: none;
+    display: none;
+}
+
+.tickbit {
+    width: 22px;
+    height: 22px;
+    background: none;
+    transition: .3s all ease-in;
+}
+
+.delmk {
+    display: none;
+    background: none;
+    transition: .3s all ease-in;
+}
+
+.delete:hover .delmk {
+    display: block;
+}
+
+.tickmk {
+    background: none;
+    transition: .5s all ease-in;
+}
+
+.delete:hover .tickbit {
+    display: none;
+}
+
+.delete:hover .tickmk {
+    display: none;
+}
+
+.delete:hover {
+    background: tomato;
+    cursor: pointer;
+}
+
+
+.itemNameStyles {
+    margin: 20px 0;
+}
+
+.delete {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #8ece34;
+    border: none;
+    width: 90%;
+    padding: 22px 0;
+    border-radius: 8px;
+    font-size: 22px;
+    transition: .3s all ease-in;
+}
+
+@media screen and (min-width: 426px) {
+    .item {
+        display: flex;
+        flex-direction: row; 
+        align-items: center;
+        /* background: red; */
+    }
+    .itemNameStyles {
+        background: rgba(255,255,255, .08);
+        display: flex;
+        width: 90%;
+        padding: 32px 30px;
+        border-radius: 10px 0 0 10px;
+    }
+    
+    /* .delete:hover {
+        background-color: tomato;
+    } */
+    
+    .delSpan {
+        display: none;
+    }
+    
+    .delete {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 10%;
+        padding: 37px 0px;
+        margin: 0;
+        border-radius: 0 10px 10px 0;
+        /* transition: .3s all ease-in; */
+        
+        /* font-size: 40px; */
+
+    }
+}
+
+@media screen and (min-width: 2560px){
+    .itemNameStyles {
+        font-size: 90px;
+        padding: 56px 40px;
+    }
+
+    .delete {
+        font-size: 60px;
+        padding: 72px 0;
+    }
+
+    .tickbit {
+        width: 44px;
+        height: 44px;
+    }
+}

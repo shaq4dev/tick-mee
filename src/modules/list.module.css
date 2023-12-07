@@ -1,0 +1,7 @@
+.container {
+    border-top: 2px solid rgba(255, 99, 71, 0.5);
+    padding-top: 20px;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 50px;
+}
